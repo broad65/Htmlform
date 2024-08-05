@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Htmlform</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="form">
+        <p class="head">Personal details</p></div>
+        <div class="form-content">
     <form action="get">
-        <fieldset>
-            <legend>Personal Details</legend>
           <label for="Salutation">Salutation</label><br>
             <select name="Salutation" id="input">
-                <option value="None">None</option>
+                <option value="Sir">Sir</option>
+                <option value="madam">Madam</option>
             </select><br>
             <label for="fnane">First name:</label>
             <input type="text"><br>
@@ -27,8 +30,9 @@
             <input type="date"><br>
             <label for="address">Address:</label><br>
             <textarea name="address" id="address" cols="30"></textarea><br>
+        </div>
          <button>Submit</button>
-        </fieldset>
     </form>
+
 </body>
 </html>
