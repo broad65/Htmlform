@@ -8,30 +8,41 @@
 </head>
 <body>
     <div class="form">
-        <p class="head">Personal details</p></div>
+        <form action="handling form page"></form>
+        <p class="head">Personal details</p>
         <div class="form-content">
-    <form action="get">
-          <label for="Salutation">Salutation</label><br>
-            <select name="Salutation" id="input">
-                <option value="Sir">Sir</option>
-                <option value="madam">Madam</option>
-            </select><br>
-            <label for="fnane">First name:</label>
-            <input type="text"><br>
-            <label for="Lname">Last name:</label>
-            <input type="text"><br>
-            <label for="gender">Gender:</label>
-             <input type="radio">Male
-             <input type="radio">Female
-             <br>
-            <label for="email">Email:</label>
-            <input type="text"><br>
-            <label for="date">Date of Birth:</label>
-            <input type="date"><br>
-            <label for="address">Address:</label><br>
-            <textarea name="address" id="address" cols="30"></textarea><br>
+            <div class="salutation">
+                <label for="salutation">Salutation</label>
+                <select name="salutation" id="salutation">
+                    <option value="Sir">Sir</option>
+                    <option value="madam">Madam</option>
+                </select>
+            </div>
+            <ul>
+                <li>
+                    <label for="fname">First name:</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <label for="lname">Last name:</label>
+                    <input type="text">
+                </li><br>
+                <li>
+                    <label for="Date of birth"> Date of birth</label>
+                    <input type="date">
+                </li><br>
+                <li>
+                    <label for="message">Address</label>
+                  <textarea name="address" id="message"></textarea>  
+                </li><br>
+                <button class="item">Submit</button>
+            </ul>
+
         </div>
-         <button>Submit</button>
+    </div>
+        
+        
+          
     </form>
 
 </body>

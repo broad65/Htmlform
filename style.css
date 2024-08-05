@@ -3,6 +3,19 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.head {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.2rem 0;
+    color: #0e71ea;
+    
+}.form-content, ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem;
+}
 .form{
      {
         position: absolute;
