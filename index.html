@@ -1,34 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Htmlform</title>
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="get">
-        <fieldset>
-            <legend>Personal Details</legend>
-          <label for="Salutation">Salutation</label><br>
-            <select name="Salutation" id="input">
-                <option value="None">None</option>
-            </select><br>
-            <label for="fnane">First name:</label>
-            <input type="text"><br>
-            <label for="Lname">Last name:</label>
-            <input type="text"><br>
-            <label for="gender">Gender:</label>
-             <input type="radio">Male
-             <input type="radio">Female
-             <br>
-            <label for="email">Email:</label>
-            <input type="text"><br>
-            <label for="date">Date of Birth:</label>
-            <input type="date"><br>
-            <label for="address">Address:</label><br>
-            <textarea name="address" id="address" cols="30"></textarea><br>
-         <button>Submit</button>
-        </fieldset>
-    </form>
+    <div class="form">
+        <form action="handling my form page" method="post">
+            <p class="head"> Personal details</p>
+            <div class="form-content"> 
+                <div class="salutation">
+                    <label for="salutation">
+                        <span>salutation</span>
+                        <select name="salutation" id="salutation">
+                            <option value="Sir">Sir</option>
+                            <option value="Madam" >Madam</option>
+                        </select>
+                    </label>
+                </div>
+                <ul>
+                    <li>
+                        <label for="firstname">Firstname</label>
+                        <input  type="text" class="item" required>
+                        <li>
+                            <label for="lastname">Lastname</label>
+                            <input type="text" class="item" required>
+                            <li>
+                                <label for="date">Date</label>
+                                <input type="date" class="item" required>
+                                <li>
+                                    <label for="message">Address</label>
+                                    <textarea name="address" id="address" cols="30" rows="10"></textarea required>
+                                    <li>
+                                        <button class="item">Submit</button>
+                                    </li>
+                                </li>
+                            </li>
+                        </li>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </form>
+    </div>
 </body>
 </html>
+       
